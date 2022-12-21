@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="123"/>
+    <button onclick="timkiem();">tìm kiếm</button>
+    <p id="msg"></p>
+    <script>
+        function timkiem(){var loaiqua = 
+            document.getElementById("123").value;
+            var gia= Number;
+            switch (loaiqua) {
+                case "Ổi":
+                    gia = 20000;
+                    break;
+                case "Dưa Hấu":
+                    gia = 20000;
+                    break;
+                case "Táo":
+                    gia = 30000;
+                    break;
+                case "Xoài":
+                    gia = 40000;
+                    break;
+                case "Cam":
+                    gia = 40000;
+                    break;
+                case "Chôm Chôm":
+                    gia = 40000;
+                    break;
+                case "Măng Cụt":
+                    gia = 50000;
+                    break;
+                    case "Mèo": 
+                    gia = 200000000;
+                    break;
+                default:
+                    break;
+
+            }
+            document.getElementById('msg').innerHTML = 'Giá là ' + gia + " VND/kg";
+
+            }
+    </script>
+</body>
+</html>
